@@ -1,0 +1,235 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\RawConverter.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\RawConverter.ico"
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About RawConverter"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "RawConverter, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2017",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_RAWCONVERTER_DIALOG DIALOGEX 0, 0, 253, 152
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "RawConverter"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "RawFile",IDC_STATIC,6,10,30,12,WS_TABSTOP
+    EDITTEXT        IDC_FILEPATH,36,8,173,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "..",IDC_FILEOPEN,219,7,27,15
+    LTEXT           "Raw Width(px)",IDC_STATIC,6,30,54,8
+    EDITTEXT        IDC_WIDTH,60,28,60,12,ES_AUTOHSCROLL
+    LTEXT           "Raw Height(px)",IDC_STATIC,132,30,54,8
+    EDITTEXT        IDC_WIDTH2,186,28,60,12,ES_AUTOHSCROLL
+    GROUPBOX        "Bit Depth",IDC_STATIC,6,48,42,66,WS_DISABLED | WS_GROUP
+    CONTROL         "8 Bit",IDC_BITDEPTH8,"Button",BS_AUTORADIOBUTTON | WS_GROUP,13,66,33,12
+    CONTROL         "10 Bit",IDC_BITDEPTH10,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,13,90,33,12
+    GROUPBOX        "Color Type",IDC_STATIC,54,48,60,66,WS_DISABLED | WS_GROUP
+    CONTROL         "Gray Scale",IDC_COLORTYPE8,"Button",BS_AUTORADIOBUTTON | WS_GROUP,60,66,48,12
+    CONTROL         "True Color",IDC_COLORTYPE24,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,60,90,48,12
+    GROUPBOX        "File Type",IDC_STATIC,120,48,42,66,WS_DISABLED | WS_GROUP
+    CONTROL         "BMP",IDC_BMPTYPE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,126,60,24,12
+    CONTROL         "JPGE",IDC_JPGETYPE,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,126,78,30,12
+    CONTROL         "PNG",IDC_PNGTYPE,"Button",BS_AUTORADIOBUTTON | WS_DISABLED | WS_TABSTOP,126,96,24,12
+    GROUPBOX        "Bayer",IDC_STATIC,168,48,78,66,WS_DISABLED | WS_GROUP
+    CONTROL         "GBRG",IDC_BAYER_GBRG,"Button",BS_AUTORADIOBUTTON | WS_GROUP,175,66,30,12
+    CONTROL         "GRGB",IDC_BAYER_GRGB,"Button",BS_AUTORADIOBUTTON,211,66,30,12
+    CONTROL         "BGGR",IDC_BAYER_BGGR,"Button",BS_AUTORADIOBUTTON,175,90,30,12
+    CONTROL         "RGGB",IDC_BAYER_RGGB,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,211,90,30,12
+    PUSHBUTTON      "Convert",IDC_CONVERT,6,120,240,24,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "MystesC"
+            VALUE "FileDescription", "RawConverter"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "RawConverter.exe"
+            VALUE "LegalCopyright", "(c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "RawConverter.exe"
+            VALUE "ProductName", "RawConverter"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_RAWCONVERTER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 246
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 145
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About RawConverter..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\RawConverter.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
